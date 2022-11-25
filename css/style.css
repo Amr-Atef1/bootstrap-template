@@ -1,0 +1,217 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc501;
+  --labny-color:#eff7fa
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+}
+
+.main-btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.main-btn:hover, .main-btn:active {
+  color: var(--yellow-color) !important;
+  background-color: var(--red-color) !important;
+  border-color: transparent !important;
+}
+
+.navbar {
+  background-color: var(--dark-color)
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+
+.container .collapse .search {
+  border-left: 1px solid var(--green-color)
+}
+
+.container .collapse .search svg {
+  color: var(--green-color)
+}
+
+/* start landing */
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px)
+}
+
+/* End landing */
+/* start features */
+.features .icon-holder {
+  height: 200px;
+}
+
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+  font-size: 12rem;
+  color: var(--labny-color);
+}
+
+.features .icon-holder .icon {
+  color: var(--green-color);
+}
+.features .feat h2{
+  color: var(--yellow-color)
+}
+/* End features */
+/* Start services */
+.services{
+  background-color: var(--labny-color)
+}
+.services .nav .nav-item{
+  font-weight: 500
+}
+.services .nav .nav-item .active{
+  color: var(--yellow-color)
+}
+.services .nav .nav-item .nav-link:hover:not(.active){
+  color: red !important;
+}
+.services .serv .image{
+  border: 5px solid white;
+  overflow: hidden;
+}
+.services .serv .image .cover{
+  width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-color: #00c6bfc2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.services .serv .image:hover .cover{
+left: 0;
+}
+/* End services */
+/* start about */
+.about .head{
+  max-width: 500px
+}
+/* End about */
+/* start team */
+.team{
+  background-color: var(--labny-color);
+
+}
+.team h2{
+  letter-spacing: -1px ;
+color: var(--yellow-color)
+}
+.team .row .card-title{
+  background-color: var(--green-color)
+}
+.team .row .card-text{
+  font-weight: 500 ;
+}
+/* End team */
+/* start projects */
+.project{
+  background-color:  var(--dark-color);
+}
+/* end projects */
+/* start subscribe */
+.subscribe{
+  background-color: var(--yellow-color)
+}
+.subscribe .row form input[type="text"]{
+border:none;
+border-bottom: 1px solid white;
+caret-color: black
+}
+.subscribe .row form input[type="text"]:focus{
+  outline: none
+}
+.subscribe .row form input[type="text"]::placeholder{
+  color: white
+}
+.subscribe .row form input[type="submit"]{
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+  padding:0.5rem 1rem ;
+}
+/* End subscribe */
+/* start footer */
+.footer{
+  background-color: var(--dark-color);
+}
+.footer .Created .Graph{
+  color: var(--green-color)
+}
+.footer .copy .bondi{
+  color: var(--yellow-color)
+}
+.footer .row ul li{
+font-weight: 500;
+
+}
+.footer .row .links svg{
+  width: 20px;
+  height: 20px;
+  color: white;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.footer .row .links .fa-facebook{
+  background-color:#1877f2;
+}
+.footer .row .links .fa-twitter{
+  background-color:#1da1f2;
+}
+.footer .row .links .fa-linkedin{
+  background-color:#0077b5;
+}
+.footer .row .links .fa-youtube{
+  background-color:#ff0000;
+}
+/* End footer */
